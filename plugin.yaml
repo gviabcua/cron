@@ -1,0 +1,36 @@
+plugin:
+    name: Cron
+    description: Планувальник
+    author: gviabcua
+    icon: oc-icon-magic
+    homepage: ''
+permissions:
+    cron:
+        tab: Cron
+        label: Cron
+navigation:
+    cron:
+        label: Cron
+        url: gviabcua/cron/workflows
+        icon: icon-magic
+        permissions:
+            - cron
+        sideMenu:
+            workflows:
+                label: Планувальник
+                url: gviabcua/cron/workflows
+                icon: icon-sitemap
+                permissions:
+                    - cron
+            triggers:
+                label: Тригери
+                url: gviabcua/cron/triggers
+                icon: icon-code
+                permissions:
+                    - cron
+            actions:
+                label: Дії
+                url: gviabcua/cron/actions
+                icon: icon-flash
+                permissions:
+                    - cron

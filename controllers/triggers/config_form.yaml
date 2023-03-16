@@ -1,0 +1,11 @@
+name: Triggers
+modelClass: Gviabcua\Cron\Models\Trigger
+form: $/gviabcua/cron/models/trigger/fields.yaml
+defaultRedirect: gviabcua/cron/triggers
+create:
+    redirect: 'gviabcua/cron/triggers/update/:id'
+    redirectClose: gviabcua/cron/triggers
+update:
+    redirect: gviabcua/cron/triggers
+    redirectClose: gviabcua/cron/triggers
+preview: {  }

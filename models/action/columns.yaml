@@ -1,0 +1,20 @@
+columns:
+    name:
+        label: name
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: description
+        type: text
+        searchable: true
+    type:
+        label: type
+        type: text
+        searchable: true
+        sortable: true
+    value:
+        label: value
+        type: text
+        searchable: true
+        sortable: true

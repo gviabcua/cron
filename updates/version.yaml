@@ -1,0 +1,7 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Initialize plugin.'
+    - builder_table_create_gviabcua_cron_triggers.php
+    - builder_table_create_gviabcua_cron_workflows.php
+    - builder_table_create_gviabcua_cron_actions.php

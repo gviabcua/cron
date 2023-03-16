@@ -1,0 +1,10 @@
+name: Workflows
+form: $/gviabcua/cron/models/workflow/fields.yaml
+modelClass: Gviabcua\Cron\Models\Workflow
+defaultRedirect: gviabcua/cron/workflows
+create:
+    redirect: 'gviabcua/cron/workflows/update/:id'
+    redirectClose: gviabcua/cron/workflows
+update:
+    redirect: gviabcua/cron/workflows
+    redirectClose: gviabcua/cron/workflows

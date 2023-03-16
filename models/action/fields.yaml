@@ -1,0 +1,30 @@
+fields:
+    name:
+        label: name
+        span: full
+        required: 1
+        type: text
+        comment: 'e.g. ping'
+    description:
+        label: description
+        span: auto
+        type: text
+    type:
+        label: type
+        options:
+            mail: 'mail'
+            webhook: 'webhook'
+            log: 'log'
+            query: 'query'
+            shell: 'shell'
+            artisancommand: 'artisancommand'
+            grushercommand: 'grushercommand'
+        showSearch: true
+        span: auto
+        required: 1
+        type: dropdown
+    value:
+        label: value
+        span: full
+        type: text
+        comment: '%API% - is API URL'

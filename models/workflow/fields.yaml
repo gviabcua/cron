@@ -1,0 +1,128 @@
+fields:
+    name:
+        label: 'name'
+        span: full
+        required: 1
+        type: text
+        comment: 'e.g. NewUser'
+    description:
+        label: 'description'
+        span: auto
+        type: text
+    trigger:
+        label: 'trigger'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+        required: 1
+    active:
+        label: 'active'
+        span: auto
+        default: 0
+        type: switch
+    items:
+        label: 'items'
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        groups:
+            mail:
+                name: 'mail'
+                description: 'mail'
+                icon: icon-envelope
+                fields:
+                    action_id:
+                        label: 'action'
+                        nameFrom: name
+                        descriptionFrom: description
+                        span: full
+                        required: 1
+                        type: relation
+                        emptyOption: 'empty'
+                        scope: Mail
+            webhook:
+                name: 'webhook'
+                description: 'action'
+                icon: icon-globe
+                fields:
+                    action_id:
+                        label: 'action'
+                        nameFrom: name
+                        descriptionFrom: description
+                        span: full
+                        required: 1
+                        type: relation
+                        emptyOption: 'empty'
+                        scope: Webhook
+            log:
+                name: 'log'
+                description: 'action'
+                icon: icon-file
+                fields:
+                    action_id:
+                        label: 'action'
+                        nameFrom: name
+                        descriptionFrom: description
+                        span: full
+                        required: 1
+                        type: relation
+                        emptyOption: 'empty'
+                        scope: Log
+            query:
+                name: 'query'
+                description: 'action'
+                icon: icon-database
+                fields:
+                    action_id:
+                        label: 'action'
+                        nameFrom: name
+                        descriptionFrom: description
+                        span: full
+                        required: 1
+                        type: relation
+                        emptyOption: 'empty'
+                        scope: Query
+            shell:
+                name: 'shell'
+                description: 'action'
+                icon: icon-database
+                fields:
+                    action_id:
+                        label: 'action'
+                        nameFrom: name
+                        descriptionFrom: description
+                        span: full
+                        required: 1
+                        type: relation
+                        emptyOption: 'empty'
+                        scope: Shell
+            artisancommand:
+                name: 'artisancommand'
+                description: 'action'
+                icon: icon-database
+                fields:
+                    action_id:
+                        label: 'action'
+                        nameFrom: name
+                        descriptionFrom: description
+                        span: full
+                        required: 1
+                        type: relation
+                        emptyOption: 'empty'
+                        scope: ArtisanCommand
+            grushercommand:
+                name: 'grushercommand'
+                description: 'action'
+                icon: icon-database
+                fields:
+                    action_id:
+                        label: 'action'
+                        nameFrom: name
+                        descriptionFrom: description
+                        span: full
+                        required: 1
+                        type: relation
+                        emptyOption: 'empty'
+                        scope: GrusherCommand
+        form: {  }

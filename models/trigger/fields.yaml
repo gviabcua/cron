@@ -1,0 +1,20 @@
+fields:
+    name:
+        label: name
+        span: full
+        required: 1
+        type: text
+    type:
+        label: type
+        options:
+            cronjob: cronjob
+            event: event
+            manual: manual
+        showSearch: true
+        span: auto
+        required: 1
+        type: dropdown
+    value:
+        label: value
+        span: auto
+        type: text

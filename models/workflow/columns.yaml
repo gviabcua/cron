@@ -1,0 +1,30 @@
+columns:
+    active:
+        label: 'active'
+        type: partial
+        sortable: true
+    name:
+        label: 'workflow'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'description'
+        type: text
+        searchable: true
+        sortable: false
+    trigger1:
+        label: trigger1
+        type: text
+        select: value
+        relation: trigger
+    trigger2:
+        label: trigger2
+        type: text
+        select: name
+        relation: trigger
+    trigger3:
+        label: trigger3
+        type: text
+        select: type
+        relation: trigger

@@ -1,0 +1,10 @@
+name: Actions
+form: $/gviabcua/cron/models/action/fields.yaml
+modelClass: Gviabcua\Cron\Models\Action
+defaultRedirect: gviabcua/cron/actions
+create:
+    redirect: 'gviabcua/cron/actions/update/:id'
+    redirectClose: gviabcua/cron/actions
+update:
+    redirect: gviabcua/cron/actions
+    redirectClose: gviabcua/cron/actions
