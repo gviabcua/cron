@@ -1,5 +1,5 @@
 ##Features
-My powerful workflow plugin allows you to perform predefined tasks that are triggered by cronjobs or events (Briddle gviabcua mod).
+My powerful workflow plugin allows you to perform predefined tasks that are triggered by cronjobs or events.
 
 ##Examples
 - Send a customized email a day before (or a day after) the arrival of guests (**cronjob > email**)
@@ -17,7 +17,7 @@ Triggers are used to start rules and have a **type** (manual, event, cronjob) an
 ###Manual trigger
 You can call any trigger like this:
 
-    use Gviabcua\Workflow\Models\Workflow;
+    use Briddle\Workflow\Models\Workflow;
     $workflow = New Workflow;
     $workflow->triggerWorkflow('CamelCasedWorkflowName');
 
